@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PrincipalController">
+   <children>
+      <StackPane layoutX="329.0" layoutY="127.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <BorderPane layoutX="183.0" layoutY="14.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <AnchorPane prefHeight="10.0" prefWidth="1100.0" styleClass="main-top-form" stylesheets="@Style/PrincipalStyle.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="27.0" prefWidth="1100.0" styleClass="top-form" stylesheets="@Style/PrincipalStyle.css" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="closeBtn" fitHeight="19.0" fitWidth="25.0" layoutX="1069.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.2000000000000028" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="2.0">
+                                       <image>
+                                          <Image url="@imagens/close.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <left>
+                        <AnchorPane prefHeight="574.0" prefWidth="212.0" styleClass="nav-form" stylesheets="@Style/PrincipalStyle.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="91.0" fitWidth="64.0" layoutX="58.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@imagens/121693.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="55.0" layoutY="103.0" text="Bem-vindo," textFill="#fff9f9">
+                                 <font>
+                                    <Font name="TakaoPGothic" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="username" alignment="CENTER" layoutX="9.0" layoutY="127.0" prefHeight="24.0" prefWidth="185.0" text="Luiz Felipe" textFill="WHITE">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="dasboard_btn" layoutX="13.0" layoutY="215.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="187.0" styleClass="nav-btn" stylesheets="@Style/PrincipalStyle.css" text="Dasboard" />
+                              <Button fx:id="avaliableRooms_btn" layoutX="14.0" layoutY="264.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="187.0" styleClass="nav-btn" stylesheets="@Style/PrincipalStyle.css" text="Avaliable Rooms" />
+                              <Line endX="100.0" layoutX="111.0" layoutY="161.0" startX="-100.0" stroke="WHITE" />
+                              <Button fx:id="logout_btn" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="67.0" styleClass="nav-btn" stylesheets="@Style/PrincipalStyle.css" text="sair" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+                              <Button fx:id="customers_btn" layoutX="14.0" layoutY="306.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="187.0" styleClass="nav-btn" stylesheets="@Style/PrincipalStyle.css" text="Customers" />
+                           </children>
+                        </AnchorPane>
+                     </left>
+                     <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane fx:id="dasboard_form" prefHeight="567.0" prefWidth="888.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="14.0" layoutY="8.0" prefHeight="219.0" prefWidth="840.0" stylesheets="@Style/PrincipalStyle.css">
+                                       <children>
+                                          <AnchorPane fx:id="dasboard_bookToday" layoutX="14.0" layoutY="18.0" prefHeight="183.0" prefWidth="273.0" styleClass="card" stylesheets="@Style/PrincipalStyle.css">
+                                             <children>
+                                                <Label layoutX="57.0" layoutY="119.0" text="Today's book" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="28.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dasboard_IncomeToday" layoutX="297.0" layoutY="18.0" prefHeight="183.0" prefWidth="259.0" styleClass="card" stylesheets="@Style/PrincipalStyle.css">
+                                             <children>
+                                                <Label layoutX="45.0" layoutY="119.0" text="Today's Income" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="28.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="dasboard_incomeTotal" layoutX="569.0" layoutY="18.0" prefHeight="183.0" prefWidth="259.0" styleClass="card" stylesheets="@Style/PrincipalStyle.css">
+                                             <children>
+                                                <Label layoutX="68.0" layoutY="134.0" text="Total Income" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="28.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="16.0" layoutY="244.0" prefHeight="312.0" prefWidth="846.0" stylesheets="@Style/PrincipalStyle.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <AreaChart fx:id="dasboard_areaChart" layoutX="12.0" layoutY="8.0" prefHeight="296.0" prefWidth="820.0" title="Income Data">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </AreaChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="avaliableRooms_form" layoutX="88.0" layoutY="41.0" prefHeight="567.0" prefWidth="888.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="14.0" layoutY="8.0" prefHeight="549.0" prefWidth="274.0" stylesheets="@Style/PrincipalStyle.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TextField fx:id="avaliableRooms_roomNumber" layoutX="74.0" layoutY="32.0" prefHeight="25.0" prefWidth="167.0" styleClass="text-field" stylesheets="@Style/PrincipalStyle.css" />
+                                          <Label layoutX="14.0" layoutY="37.0" text="Room#" AnchorPane.leftAnchor="14.4" />
+                                          <Label layoutX="14.0" layoutY="69.0" prefHeight="15.0" prefWidth="43.0" text="Type:" AnchorPane.leftAnchor="14.0" />
+                                          <ComboBox fx:id="avaliableRooms_roomType" layoutX="74.0" layoutY="64.0" prefHeight="25.0" prefWidth="172.0" />
+                                          <ComboBox fx:id="avaliable_status" layoutX="74.0" layoutY="104.0" prefHeight="25.0" prefWidth="172.0" />
+                                          <Label layoutX="14.0" layoutY="109.0" prefHeight="15.0" prefWidth="50.0" text="Status:" AnchorPane.leftAnchor="14.4" />
+                                          <Label layoutX="12.0" layoutY="147.0" text="Price" AnchorPane.leftAnchor="14.4" />
+                                          <TextField fx:id="avaliableRooms_price" layoutX="72.0" layoutY="142.0" prefHeight="25.0" prefWidth="174.0" styleClass="text-field" stylesheets="@Style/PrincipalStyle.css" />
+                                          <Button fx:id="avaliableRooms_addBtn" layoutX="14.0" layoutY="275.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" styleClass="add-btn" stylesheets="@Style/PrincipalStyle.css" text="ADD" AnchorPane.topAnchor="275.0" />
+                                          <Button fx:id="avaliableRooms_updateBtn" layoutX="137.0" layoutY="275.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" styleClass="update-btn" stylesheets="@Style/PrincipalStyle.css" text="Update" AnchorPane.topAnchor="275.0" />
+                                          <Button fx:id="avaliableRooms_deleteBtn" layoutX="137.0" layoutY="327.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" styleClass="delete-btn" stylesheets="@Style/PrincipalStyle.css" text="Delete" AnchorPane.topAnchor="327.0" />
+                                          <Button fx:id="avaliableRooms_clearBtn" layoutX="15.0" layoutY="327.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="99.0" styleClass="clear-btn" stylesheets="@Style/PrincipalStyle.css" text="Clear" AnchorPane.topAnchor="327.0" />
+                                          <Button fx:id="avaliableRooms_checkInBtn" layoutX="40.0" layoutY="429.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="176.0" styleClass="check-in-btn" stylesheets="@Style/PrincipalStyle.css" text="Check in" AnchorPane.topAnchor="429.0" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="307.0" layoutY="8.0" prefHeight="549.0" prefWidth="574.0" stylesheets="@Style/PrincipalStyle.css" AnchorPane.rightAnchor="5.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TableView fx:id="avaliableRooms_tableView" layoutX="14.0" layoutY="64.0" prefHeight="479.0" prefWidth="546.0">
+                                            <columns>
+                                              <TableColumn fx:id="avaliableRooms_col_roomNumber" prefWidth="75.0" text="Room#" />
+                                              <TableColumn fx:id="avaliableRooms_col_roomType" prefWidth="140.0" text="Room Type" />
+                                                <TableColumn fx:id="avaliableRooms_col_status" prefWidth="164.0" text="Status" />
+                                                <TableColumn fx:id="avaliableRooms_col_price" prefWidth="166.0" text="Price($)" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="avaliableRooms_search" layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="210.0" promptText="Pesquisa" styleClass="search" stylesheets="@Style/PrincipalStyle.css" />
+                                          <Button fx:id="avaliableRooms_serachBtn" layoutX="232.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" styleClass="search-btn" stylesheets="@Style/PrincipalStyle.css" text="Pesquisa">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Button>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="customers_form" layoutX="109.0" layoutY="93.0" prefHeight="569.0" prefWidth="888.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="19.0" layoutY="20.0" prefHeight="539.0" prefWidth="862.0" stylesheets="@Style/PrincipalStyle.css">
+                                       <children>
+                                          <TableView fx:id="customers_tableView" layoutX="14.0" layoutY="61.0" prefHeight="472.0" prefWidth="846.0" stylesheets="@Style/PrincipalStyle.css">
+                                            <columns>
+                                              <TableColumn fx:id="customers_customerNumber" prefWidth="110.0" text="Customer#" />
+                                              <TableColumn fx:id="customers_firstName" prefWidth="141.0" text="Primeiro nome" />
+                                                <TableColumn fx:id="customers_lastName" prefWidth="141.0" text="Segundo nome" />
+                                                <TableColumn fx:id="customers_phoneNumber" prefWidth="122.0" text="Telefone" />
+                                                <TableColumn fx:id="customers_totalPayment" prefWidth="122.0" text="Pagamento" />
+                                                <TableColumn fx:id="customers_checkedin" prefWidth="94.0" text="Entrada" />
+                                                <TableColumn fx:id="customers_checkedout" prefWidth="150.0" text="Saída" />
+                                            </columns>
+                                          </TableView>
+                                          <TextField fx:id="customers_search" layoutX="14.0" layoutY="18.0" prefHeight="27.0" prefWidth="328.0" styleClass="search" stylesheets="@Style/PrincipalStyle.css" />
+                                          <Button fx:id="customers_searchBtn" layoutX="371.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" styleClass="search-btn" stylesheets="@Style/PrincipalStyle.css" text="Pesquisa" />
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
