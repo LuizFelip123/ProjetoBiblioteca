@@ -16,3 +16,7 @@ and open the template in the editor.
     -fx-background-color: #56aeb5;
     -fx-cursor: hand;
 }
+.btn-close{
+    -fx-background-color: transparent;
+    
+}

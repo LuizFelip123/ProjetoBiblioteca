@@ -31,11 +31,11 @@
                   <TextField layoutX="96.0" layoutY="232.0" prefHeight="30.0" prefWidth="220.0" promptText="Usuário" styleClass="input-text" stylesheets="@../styles/LoginStyles.css" />
                   <PasswordField layoutX="97.0" layoutY="302.0" prefHeight="30.0" prefWidth="220.0" promptText="Senha" styleClass="input-text" stylesheets="@../styles/LoginStyles.css" />
                   <Button layoutX="145.0" layoutY="380.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" styleClass="btn" stylesheets="@../styles/LoginStyles.css" text="Entrar" textFill="#fffbfb" />
-                  <ImageView fx:id="closeBtn" fitHeight="26.0" fitWidth="22.0" layoutX="321.0" layoutY="8.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagens/close.png" />
-                     </image>
-                  </ImageView>
+                  <Button fx:id="closeBtn" layoutX="297.0" mnemonicParsing="false" onAction="#close" styleClass="btn-close" stylesheets="@../styles/PrincipalStyle.css" text="x">
+                     <font>
+                        <Font size="29.0" />
+                     </font>
+                  </Button>
                </children>
             </AnchorPane>
          </children>
