@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifba.projetobiblioteca.LoginController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="629.0" prefWidth="317.0" styleClass="painel-login" stylesheets="@../styles/LoginStyles.css">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/ebook.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="316.0" prefHeight="629.0" prefWidth="355.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="97.0" layoutY="96.0" prefHeight="29.0" prefWidth="166.0" text="Biblioteca" textFill="#407ed0">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="96.0" layoutY="232.0" prefHeight="30.0" prefWidth="220.0" promptText="Usuário" styleClass="input-text" stylesheets="@../styles/LoginStyles.css" />
+                  <PasswordField layoutX="97.0" layoutY="302.0" prefHeight="30.0" prefWidth="220.0" promptText="Senha" styleClass="input-text" stylesheets="@../styles/LoginStyles.css" />
+                  <Button layoutX="145.0" layoutY="380.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="139.0" styleClass="btn" stylesheets="@../styles/LoginStyles.css" text="Entrar" textFill="#fffbfb" />
+                  <ImageView fx:id="closeBtn" fitHeight="26.0" fitWidth="22.0" layoutX="321.0" layoutY="8.0" onMouseClicked="#Close" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/close.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

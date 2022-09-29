@@ -1,0 +1,13 @@
+.painel-login{
+    -fx-background-color: linear-gradient(to bottom right, #325078, #80a5d6);
+}
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, #325078, #80a5d6);
+    -fx-border-radius: 20px;
+    -fx-fill: #ffffff;
+}
+.input-text{
+    -fx-background-color: transparent;
+    -fx-border-color: #3f3951;
+    -fx-border-width: 0px 0px .8px 0px;
+}
