@@ -18,5 +18,5 @@ and open the template in the editor.
 }
 .btn-close{
     -fx-background-color: transparent;
-    
+    -fx-cursor: hand; 
 }

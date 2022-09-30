@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <StackPane layoutX="67.0" layoutY="76.0" prefHeight="637.0" prefWidth="715.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -17,7 +17,7 @@
                <children>
                   <BorderPane layoutX="105.0" layoutY="83.0" prefHeight="637.0" prefWidth="715.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <left>
-                        <AnchorPane prefHeight="637.0" prefWidth="251.0" styleClass="painel-login" stylesheets="@../styles/LoginStyles.css" BorderPane.alignment="CENTER">
+                        <AnchorPane prefHeight="748.0" prefWidth="251.0" styleClass="painel-login" stylesheets="@../styles/LoginStyle.css" BorderPane.alignment="CENTER">
                            <children>
                               <Button layoutX="11.0" layoutY="214.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="229.0" styleClass="btn-menu" stylesheets="@../styles/PrincipalStyle.css" text="Cadastrar Livro" textFill="WHITE">
                                  <font>
@@ -29,7 +29,7 @@
                                     <Font size="16.0" />
                                  </font>
                               </Button>
-                              <Button layoutY="607.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" styleClass="btn-menu" stylesheets="@../styles/PrincipalStyle.css" text="Sair" textFill="WHITE">
+                              <Button layoutY="738.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" styleClass="btn-menu" stylesheets="@../styles/PrincipalStyle.css" text="Sair" textFill="WHITE">
                                  <font>
                                     <Font size="15.0" />
                                  </font>

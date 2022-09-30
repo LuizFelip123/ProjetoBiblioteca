@@ -5,6 +5,8 @@
     -fx-background-color: linear-gradient(to bottom right, #325078, #80a5d6);
     -fx-border-radius: 20px;
     -fx-fill: #ffffff;
+     -fx-cursor: hand;
+
 }
 .input-text{
     -fx-background-color: transparent;

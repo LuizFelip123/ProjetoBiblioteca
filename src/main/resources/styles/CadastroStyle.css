@@ -1,0 +1,24 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30/09/2022, 10:19:29
+    Author     : usuario
+*/
+
+.painel-cadastro{
+     -fx-background-color: #ffffff;
+}
+
+.input-text-cadastro{
+    -fx-background-color: transparent;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #ffffff;
+    
+}
+.button-cadastro{
+    -fx-background-color: linear-gradient(to  right bottom, #4bccfb, #adc7da);
+    -fx-cursor: hand;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="689.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="512.0" styleClass="painel-login" stylesheets="@../styles/LoginStyle.css">
+               <children>
+                  <Label layoutX="329.0" layoutY="14.0" prefHeight="28.0" prefWidth="126.0" text="Cadastro" textFill="#f2f2f2">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="62.0" layoutY="113.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+                  <TextField layoutX="62.0" layoutY="166.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+                  <TextField layoutX="62.0" layoutY="215.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+                  <Label layoutX="62.0" layoutY="98.0" text="Nome" textFill="#fffbfb" />
+                  <Label layoutX="63.0" layoutY="151.0" text="Sobrenome" textFill="WHITE" />
+                  <Label layoutX="61.0" layoutY="200.0" text="CPF" textFill="WHITE" />
+                  <Label layoutX="63.0" layoutY="253.0" text="Email" textFill="#f7fafc" />
+                  <TextField layoutX="62.0" layoutY="268.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+                  <Label layoutX="61.0" layoutY="307.0" text="Senha" textFill="#f7fafc" />
+                  <TextField layoutX="62.0" layoutY="322.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+                  <Label layoutX="61.0" layoutY="357.0" text="Confirmar Senha" textFill="#f7fafc" />
+                  <TextField layoutX="62.0" layoutY="372.0" prefHeight="25.0" prefWidth="292.0" styleClass="input-text-cadastro" stylesheets="@../styles/CadastroStyle.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="514.0" prefHeight="699.0" prefWidth="311.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/local-na-rede-internet.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="138.0" layoutY="577.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="137.0" styleClass="button-cadastro" stylesheets="@../styles/CadastroStyle.css" text="Salvar" textFill="#fffdfd">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="138.0" layoutY="623.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="137.0" styleClass="button-cadastro" stylesheets="@../styles/CadastroStyle.css" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
